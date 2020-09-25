@@ -1,12 +1,6 @@
 /* ************************************************************************** */
 /*
-Nome: Ana Orsi
-Numero USP: sei lá
-
-Nome: Samir Atum
-Numero USP: 9792612
-
-Exercício-programa 4
+This program was made by Ana Orsi and Samir Atum
 */
 /* ************************************************************************** */
 #include <stdio.h>
