@@ -1,5 +1,5 @@
 # random_stuff
-Random small programs i wrote for various reasons and want to keep track of
+Random small programs i wrote for various reasons and want to keep track of, mostly related to bioinformatics.
 
 ### faixa.R
 Small R program that calculates enzimatic parameters of a luciferase with substrate inhibition using non linear least squares. The input is an excel tables with light emission per time. This is very specific program for the experiments that I did, and it's not meant to be a general enzimatic parameter calculator.
@@ -9,3 +9,6 @@ Rustic aminoacid aligner that reads fasta sequences and outputs the best alignme
 
 ### line_breaker.c
 Tiny program that adds line breaks after each word in a name list separated by spaces
+
+### reader.py
+Reads all Water aminoacid alignments (ending with .align) in a directory and outputs a file with the summary of each in descendent order by score.
