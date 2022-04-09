@@ -15,3 +15,6 @@ Reads all Water aminoacid alignments (ending with .align) in a directory and out
 
 ### extnames.py
 The BLAST tabular output can trim the names of the sequences if they're too long. This program takes a list of the full names and rewrites the output so the names are complete.
+
+### filter.py
+Filters a samtools idxstats output by sequence length
