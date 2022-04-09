@@ -2,7 +2,7 @@ with open ("contig_hits.txt") as file:
 	lines = file.readlines()
 fim = []
 for line in lines[1:]:
-	splitlines = line.split(" ")
+	splitlines = line.split("\t")
 	if (int(splitlines[1])>100000):
 		fim.append(line)
 
