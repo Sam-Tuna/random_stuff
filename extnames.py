@@ -1,12 +1,15 @@
+name_file = "path/to/name/file"
+blastoutfile = "path/to/blast/file"
+
 #get names from file
-with open ("UniVec/names.txt") as namin:
+with open (name_file) as namin:
     names = namin.readlines()
 namin.close
 namesplit = []
 for i in names:
     namesplit.append(i[1:].split(" ", 1))
 #parse the blast output
-with open ("UniVec/gde_blast.out") as blastin:
+with open (blastoutfile) as blastin:
     blast = blastin.readlines()
 blastin.close
 blastsplit = []
@@ -20,7 +23,8 @@ for i in blastsplit:
             line = [" ".join(j), i[1]]
             line[0] = line[0].replace("\n", "")
             blastex.append("\t".join(line))
-with open ("UniVec/gde_blast_ext.tsv", "w") as out:
+#saves output            
+with open ("extended_names.tsv", "w") as out:
     for i in blastex:
         out.write(i)
 out.close
